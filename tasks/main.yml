@@ -1,0 +1,5 @@
+---
+- name: Install Tower via Homebrew Cask
+  homebrew_cask:
+    name: tower
+  when: ansible_os_family == "Darwin"
